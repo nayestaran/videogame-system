@@ -80,22 +80,12 @@ In this project we have 3 npm workspaces to fix:
     ]
   ```
 
-To test everything is fine, **you can run this command as many times as needed** `npm run checkSolution`.
-
 <br>
 <br>
 <br>
 <br>
 
 Useful commands:
-- `npm run build`: Builds every npm workspace
-- `npm run cdk`: Synthesize CDK code to check if it's a valid CFN Stack
-- `npm run fullClean`: Deletes everything (node_modules, dist, docs...) to reset from scratch the repository
-- `npm run clean`: Deletes just dist folders
-- `npm run lint`: Lints every npm workspace
-- `npm run lint:fix`: Lints every npm workspace and tries to fix easy issues
-- `npm run test`: Runs tests for every npm workspace
-- `npm run test:watch`: Runs tests for every npm workspace on watch mode
+- `mvn compile`: Builds every npm workspace
+- `cdk synth`: Synthesize CDK code to check if it's a valid CFN Stack
 
-If any of the previous commands need to be run for a specific workspace just add the flag `-w`:
-`npm run test -w videogames-system/aws-resources/`
